@@ -7,7 +7,7 @@
 # uncomment the corresponding output section
 # The format options are: 'pdf', 'bs4', 'gitbook', 'word'
 knit: (function(input, ...) {
-    thesis_formats <- "pdf";
+    thesis_formats <- c("pdf", "bs4");
     
     source("scripts_and_filters/knit-functions.R");
     knit_thesis(input, thesis_formats, ...)
